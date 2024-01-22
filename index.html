@@ -4,32 +4,318 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockeys</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .progress-ring__circle {
+        stroke-dasharray: 440, 400;
+        transition: stroke-dashoffset 0.35s;
+        transform: rotate(90deg);
+        transform-origin: 50% 50%;
+      }
+
+      .container{
+        max-width: 90%;
+      }
+
+      /* #circle1 {
+        transform: rotate(87deg);
+      }
+
+      #circle2 {
+        transform: rotate(95deg);
+      }
+
+      #circle3 {
+        transform: rotate(90deg);
+      }
+
+      #circle4 {
+        transform: rotate(80deg);
+      } */
+    </style>
   </head>
-  <body>
-
-    <header>
-
-    </header>
+  <body class="font-manrope">
+    <header></header>
 
     <main>
+      <section id="hockeys-club">
+        <div
+          class="container mt-4 space-y-6 mx-auto border-t-2 border-[#13131833]-500 border-dashed"
+        >
+          <h2 class="text-center font-bold text-4xl mt-4">
+            Professional Hockeys Club
+          </h2>
+          <p class="text-center font-medium">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
 
+          <div
+            class="grid grid-cols-1 lg:grid-cols-4 border-t-2 border-[#13131833]-500 border-dashed"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div class="relative w-40 h-40">
+                <svg class="w-full h-full" viewBox="0 0 100 100">
+                  <!-- Background circle -->
+                  <circle
+                    class="text-gray-200 stroke-current"
+                    stroke-width="6"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                  ></circle>
+                  <!-- Progress circle -->
+                  <circle
+                    class="text-red-500 progress-ring__circle stroke-current"
+                    id="circle1"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                    stroke-dashoffset="calc(400 - (400 * 33) / 100)"
+                  ></circle>
+
+                  <!-- Center text -->
+                  <text
+                    x="50"
+                    y="50"
+                    font-size="12"
+                    text-anchor="middle"
+                    alignment-baseline="middle"
+                  >
+                    70%
+                  </text>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold">Prayer Facility</h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div class="relative w-40 h-40">
+                <svg class="w-full h-full" viewBox="0 0 100 100">
+                  <!-- Background circle -->
+                  <circle
+                    class="text-gray-200 stroke-current"
+                    stroke-width="6"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                  ></circle>
+                  <!-- Progress circle -->
+                  <circle
+                    class="text-green-500 progress-ring__circle stroke-current"
+                    id="circle2"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                    stroke-dashoffset="calc(400 - (400 * 33) / 100)"
+                  ></circle>
+
+                  <!-- Center text -->
+                  <text
+                    x="50"
+                    y="50"
+                    font-size="12"
+                    text-anchor="middle"
+                    alignment-baseline="middle"
+                  >
+                    70%
+                  </text>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold">Prayer Facility</h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div class="relative w-40 h-40">
+                <svg class="w-full h-full" viewBox="0 0 100 100">
+                  <!-- Background circle -->
+                  <circle
+                    class="text-gray-200 stroke-current"
+                    stroke-width="6"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                  ></circle>
+                  <!-- Progress circle -->
+                  <circle
+                    class="text-indigo-500 progress-ring__circle stroke-current"
+                    id="circle3"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                    stroke-dashoffset="calc(400 - (400 * 33) / 100)"
+                  ></circle>
+
+                  <!-- Center text -->
+                  <text
+                    x="50"
+                    y="50"
+                    font-size="12"
+                    text-anchor="middle"
+                    alignment-baseline="middle"
+                  >
+                    70%
+                  </text>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold">Prayer Facility</h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div class="relative w-40 h-40">
+                <svg class="w-full h-full" viewBox="0 0 100 100">
+                  <!-- Background circle -->
+                  <circle
+                    class="text-gray-200 stroke-current"
+                    stroke-width="6"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                  ></circle>
+                  <!-- Progress circle -->
+                  <circle
+                    class="text-indigo-500 progress-ring__circle stroke-current"
+                    id="circle4"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    cx="50"
+                    cy="50"
+                    r="30"
+                    fill="transparent"
+                    stroke-dashoffset="calc(400 - (400 * 33) / 100)"
+                  ></circle>
+
+                  <!-- Center text -->
+                  <text
+                    x="50"
+                    y="50"
+                    font-size="12"
+                    text-anchor="middle"
+                    alignment-baseline="middle"
+                  >
+                    70%
+                  </text>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold">Prayer Facility</h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div
+          class="container mt-4 space-y-6 mx-auto "
+        >
+
+        <div class="border-t-2 border-b-2 border-[#13131833]-500 border-dashed space-y-5">
+            <h2 class="text-center font-bold text-4xl mt-4">Clients Question</h2>
+          <p class="text-center font-medium pb-5">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+
+        </div>
+          
+
+          <div class="grid grid-cols-1 lg:grid-cols-2  justify-center border rounded-2xl p-8 gap-3">
+            <div > 
+                <img class="w-[100%] h-[300px] lg:h-[450px] rounded-2xl" src="Images/11.png" alt="">
+            </div>
+
+            <div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  Our Equipment
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                    elit enim sagittis turpis in magna.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-semibold">
+                  Hockey Training
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-semibold">
+                  Private Lessons
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-semibold">
+                  Ski Touring
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-semibold">Booking</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-semibold">Pricings</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        
-    </footer>
-
-
+    <footer></footer>
   </body>
 </html>
