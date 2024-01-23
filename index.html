@@ -39,26 +39,77 @@
       .container-main {
         max-width: 90%;
       }
-
-      /* #circle1 {
-        transform: rotate(87deg);
-      }
-
-      #circle2 {
-        transform: rotate(95deg);
-      }
-
-      #circle3 {
-        transform: rotate(90deg);
-      }
-
-      #circle4 {
-        transform: rotate(80deg);
-      } */
     </style>
   </head>
   <body class="font-manrope">
-    <header></header>
+    <header class="mb-40">
+      <div class="navbar bg-base-100 container-main mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl lg:text-4xl text-[#131318]"
+            >Hockey<span class="text-[#FF4240]">'</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle hidden lg:flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <a
+            class="text-white bg-[#FF4240] font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
+    </header>
 
     <main>
       <section id="hockeys-club">
@@ -117,7 +168,7 @@
               <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
             <div class="flex flex-col items-center text-center">
-              <div class="relative w-40 h-40 ">
+              <div class="relative w-40 h-40">
                 <svg class="w-full h-full" viewBox="0 0 100 100">
                   <!-- Background circle -->
                   <circle
@@ -229,7 +280,7 @@
                     text-anchor="middle"
                     alignment-baseline="middle"
                   >
-                    80% 
+                    80%
                   </text>
                 </svg>
               </div>
@@ -261,7 +312,9 @@
               class="bg-[url('/Images/2.png')] min-h-96 bg-cover bg-no-repeat rounded-2xl bg-transparent flex flex-col justify-center lg:justify-end pl-10 lg:pb-10"
             >
               <div class="space-y-4">
-                <h3 class="text-white text-2xl lg:text-3xl font-extrabold">Junior Program</h3>
+                <h3 class="text-white text-2xl lg:text-3xl font-extrabold">
+                  Junior Program
+                </h3>
                 <p class="text-white font-medium w-[80%]">
                   Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                   elit enim sagittis turpis in magna. Id et sed euismod natoque
@@ -280,7 +333,9 @@
               class="bg-[url('/Images/3.png')] min-h-96 bg-cover bg-no-repeat rounded-2xl bg-transparent flex flex-col justify-center lg:justify-end pl-10 lg:pb-10"
             >
               <div class="space-y-4">
-                <h3 class="text-white text-2xl lg:text-3xl font-extrabold">Teenager Program</h3>
+                <h3 class="text-white text-2xl lg:text-3xl font-extrabold">
+                  Teenager Program
+                </h3>
                 <p class="text-white font-medium w-[80%]">
                   Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                   elit enim sagittis turpis in magna. Id et sed euismod natoque
@@ -289,17 +344,19 @@
 
                 <button
                   type="submit"
-                  class="text-white bg-[#FF4240] font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center "
+                  class="text-white bg-[#FF4240] font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center"
                 >
                   Register Now
                 </button>
               </div>
             </div>
             <div
-              class="bg-[url('/Images/4.png')] min-h-96 bg-cover bg-no-repeat rounded-2xl bg-transparent flex flex-col justify-center lg:justify-end pl-10 lg:pb-10 lg:col-span-2"
+              class="bg-[url('/Images/4.png')] min-h-96 bg-cover bg-no-repeat rounded-2xl flex flex-col justify-center lg:justify-end pl-10 lg:pb-10 lg:col-span-2"
             >
               <div class="space-y-4">
-                <h3 class="text-white text-2xl lg:text-3xl font-extrabold">Professional Program</h3>
+                <h3 class="text-white text-2xl lg:text-3xl font-extrabold">
+                  Professional Program
+                </h3>
                 <p class="text-white font-medium w-[50%]">
                   Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                   elit enim sagittis turpis in magna. Id et sed euismod natoque
@@ -312,6 +369,281 @@
                 >
                   Register Now
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="container-main mx-auto">
+          <div
+            class="border-t-2 border-b-2 border-[#13131833]-500 border-dashed space-y-5"
+          >
+            <h2 class="text-center font-bold text-2xl lg:text-4xl mt-4">
+              Our New Products
+            </h2>
+            <p
+              class="text-center font-medium pb-5 text-[#13131899] lg:w-[50%] mx-auto"
+            >
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+
+          <div class=" mt-5 grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
+
+            <div class="card lg:card-side bg-base-100 shadow-xl p-4 ">
+              <figure><img class="w-full" src="/Images/5.png" alt="Album"/></figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/star.png" alt="">
+                  <p class="text-[#13131880] font-medium">5.0</p>
+
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/eye.png" alt="">
+                    <p class="text-[#13131880] font-medium">20</p>
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/heart.png" alt="">
+                  <p class="text-[#13131880] font-medium">200</p>
+
+                  </div>
+                  
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p class="text-[#13131880] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                  
+                  <div class="flex flex-col lg:flex-row lg:items-center gap-4 ">
+                    <div>
+                      <p class="text-[#FF4240] font-extrabold ">Price-$22.00</p>
+                    </div>
+                    <div class="flex gap-2 ">
+                      <img src="/Images/cart.png" alt="">
+                    <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+
+                    </div>
+                    
+                  </div>
+            
+                
+              </div>
+            </div>
+
+            <div class="card lg:card-side bg-base-100 shadow-xl p-4 ">
+              <figure><img class="w-full" src="/Images/5.png" alt="Album"/></figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/star.png" alt="">
+                  <p class="text-[#13131880] font-medium">5.0</p>
+
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/eye.png" alt="">
+                    <p class="text-[#13131880] font-medium">20</p>
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/heart.png" alt="">
+                  <p class="text-[#13131880] font-medium">200</p>
+
+                  </div>
+                  
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p class="text-[#13131880] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                  
+                  <div class="flex flex-col lg:flex-row lg:items-center gap-4 ">
+                    <div>
+                      <p class="text-[#FF4240] font-extrabold ">Price-$22.00</p>
+                    </div>
+                    <div class="flex gap-2 ">
+                      <img src="/Images/cart.png" alt="">
+                    <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+
+                    </div>
+                    
+                  </div>
+            
+                
+              </div>
+            </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl p-4 ">
+              <figure><img class="w-full" src="/Images/5.png" alt="Album"/></figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/star.png" alt="">
+                  <p class="text-[#13131880] font-medium">5.0</p>
+
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/eye.png" alt="">
+                    <p class="text-[#13131880] font-medium">20</p>
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/heart.png" alt="">
+                  <p class="text-[#13131880] font-medium">200</p>
+
+                  </div>
+                  
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p class="text-[#13131880] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                  
+                  <div class="flex flex-col lg:flex-row lg:items-center gap-4 ">
+                    <div>
+                      <p class="text-[#FF4240] font-extrabold ">Price-$22.00</p>
+                    </div>
+                    <div class="flex gap-2 ">
+                      <img src="/Images/cart.png" alt="">
+                    <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+
+                    </div>
+                    
+                  </div>
+            
+                
+              </div>
+            </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl p-4 ">
+              <figure><img class="w-full" src="/Images/5.png" alt="Album"/></figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/star.png" alt="">
+                  <p class="text-[#13131880] font-medium">5.0</p>
+
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/eye.png" alt="">
+                    <p class="text-[#13131880] font-medium">20</p>
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/heart.png" alt="">
+                  <p class="text-[#13131880] font-medium">200</p>
+
+                  </div>
+                  
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p class="text-[#13131880] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                  
+                  <div class="flex flex-col lg:flex-row lg:items-center gap-4 ">
+                    <div>
+                      <p class="text-[#FF4240] font-extrabold ">Price-$22.00</p>
+                    </div>
+                    <div class="flex gap-2 ">
+                      <img src="/Images/cart.png" alt="">
+                    <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+
+                    </div>
+                    
+                  </div>
+            
+                
+              </div>
+            </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl p-4 ">
+              <figure><img class="w-full" src="/Images/5.png" alt="Album"/></figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/star.png" alt="">
+                  <p class="text-[#13131880] font-medium">5.0</p>
+
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/eye.png" alt="">
+                    <p class="text-[#13131880] font-medium">20</p>
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/heart.png" alt="">
+                  <p class="text-[#13131880] font-medium">200</p>
+
+                  </div>
+                  
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p class="text-[#13131880] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                  
+                  <div class="flex flex-col lg:flex-row lg:items-center gap-4 ">
+                    <div>
+                      <p class="text-[#FF4240] font-extrabold ">Price-$22.00</p>
+                    </div>
+                    <div class="flex gap-2 ">
+                      <img src="/Images/cart.png" alt="">
+                    <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+
+                    </div>
+                    
+                  </div>
+            
+                
+              </div>
+            </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl p-4 ">
+              <figure><img class="w-full" src="/Images/5.png" alt="Album"/></figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/star.png" alt="">
+                  <p class="text-[#13131880] font-medium">5.0</p>
+
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/eye.png" alt="">
+                    <p class="text-[#13131880] font-medium">20</p>
+                  </div>
+                  
+                  <div class="flex items-center space-x-2">
+                    <img src="/Images/heart.png" alt="">
+                  <p class="text-[#13131880] font-medium">200</p>
+
+                  </div>
+                  
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p class="text-[#13131880] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                  
+                  <div class="flex flex-col lg:flex-row lg:items-center gap-4 ">
+                    <div>
+                      <p class="text-[#FF4240] font-extrabold ">Price-$22.00</p>
+                    </div>
+                    <div class="flex gap-2 ">
+                      <img src="/Images/cart.png" alt="">
+                    <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+
+                    </div>
+                    
+                  </div>
+            
+                
               </div>
             </div>
 
